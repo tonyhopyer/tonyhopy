@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tonyhopy.FM </title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 2rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+        header nav {
+            margin-top: 0.5rem;
+        }
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+        header nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 5rem 2rem;
+            background: linear-gradient(to bottom, #333, #555);
+            color: #fff;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .content {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 2rem auto;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .content h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .content p {
+            margin: 1rem 0;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tonyhopy.FM</h1>
+        <nav>
+            <a href="#episodes">播客</a>
+            <a href="#about">关于</a>
+            <a href="#contact">联系</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2> 跃曰的博客 </h2>
+        <p>这是我的博客，专注于读书笔记、物联网知识分享</p>
+    </div>
+
+    <div class="content">
+        <h3>最新播客</h3>
+        <p>欢迎收听我们的最新一期节目！在这一期中，我们深入探讨了产品设计中的细节问题。</p>
+        <h3>关于我们</h3>
+        <p>Anyway.FM 是一个专注于设计与开发的中文播客，由两位设计师主持，每周更新。</p>
+        <h3>联系我们</h3>
+        <p>有任何问题或建议？请发送邮件到 <a href="mailto:hello@anyway.fm">hello@anyway.fm</a>。</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 多多交流</p>
+    </footer>
+</body>
+<body>
+    这是 body
+</body>
+</html>
+
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+user www-data;
+worker_processes auto;
+pid /run/nginx.pid;
+include /etc/nginx/modules-enabled/*.conf;
+
+events {
+        worker_connections 768;
+        # multi_accept on;
+}
+
+http {
+
+        ##
+        # Basic Settings
+        ##
+
+        sendfile on;
+        tcp_nopush on;
+        types_hash_max_size 2048;
+        # server_tokens off;
+
+        # server_names_hash_bucket_size 64;
+        # server_name_in_redirect off;
+"nginx.conf" [只读] 83L, 1447B                                                                                                                                     1,1          顶端
+user www-data;
+worker_processes auto;
+pid /run/nginx.pid;
+include /etc/nginx/modules-enabled/*.conf;
+
+events {
+        worker_connections 768;
+        # multi_accept on;
+}
+
+http {
+
+        ##
+        # Basic Settings
+        ##
+
+        sendfile on;
+        tcp_nopush on;
+        types_hash_max_size 2048;
+        # server_tokens off;
+
+        # server_names_hash_bucket_size 64;
+        # server_name_in_redirect off;
+
+        include /etc/nginx/mime.types;
+        default_type application/octet-stream;
+
+        ##
+        # SSL Settings
+        ##
+
+        ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; # Dropping SSLv3, ref: POODLE
+        ssl_prefer_server_ciphers on;
+
+        ##
+        # Logging Settings
+        ##
+
+        access_log /var/log/nginx/access.log;
+        error_log /var/log/nginx/error.log;
+
+        ##
+        # Gzip Settings
+        ##
+
+        gzip on;
+
+user www-data;
+worker_processes auto;
+pid /run/nginx.pid;
+include /etc/nginx/modules-enabled/*.conf;
+
+events {
+        worker_connections 768;
+        # multi_accept on;
+}
+
+http {
+
+        ##
+        # Basic Settings
+        ##
+
+        sendfile on;
+        tcp_nopush on;
+        types_hash_max_size 2048;
+        # server_tokens off;
+
+        # server_names_hash_bucket_size 64;
+        # server_name_in_redirect off;
+
+        include /etc/nginx/mime.types;
+        default_type application/octet-stream;
+
+        ##
+        # SSL Settings
+        ##
+
+        ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; # Dropping SSLv3, ref: POODLE
+        ssl_prefer_server_ciphers on;
+
+        ##
+        # Logging Settings
+        ##
+
+        access_log /var/log/nginx/access.log;
+        error_log /var/log/nginx/error.log;
+
+        ##
+        # Gzip Settings
+        ##
+
+        gzip on;
+
+        # gzip_vary on;
+        # gzip_proxied any;
+        # gzip_comp_level 6;
+        # gzip_buffers 16 8k;
+        # gzip_http_version 1.1;
+        # gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
+
+        ##
+        # Virtual Host Configs
+        ##
+
+        include /etc/nginx/conf.d/*.conf;
+        include /etc/nginx/sites-enabled/*;
+}
+
+
+#mail {
+#       # See sample authentication script at:
+#       # http://wiki.nginx.org/ImapAuthenticateWithApachePhpScript
+#
+#       # auth_http localhost/auth.php;
+#       # pop3_capabilities "TOP" "USER";
+#       # imap_capabilities "IMAP4rev1" "UIDPLUS";
+#
+#       server {
+#               listen     localhost:110;
+#               protocol   pop3;
+#               proxy      on;
+#       }
+#
+#       server {
+#               listen     localhost:143;
+#               protocol   imap;
+#               proxy      on;
+#       }
+#}
